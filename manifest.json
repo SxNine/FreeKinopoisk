@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "FreeKinopoisk",
+    "version": "1.0",
+    "description": "Смотри любые фильмы на кинопоиске бесплатно!",
+    "icons": {
+        "128": "128.png",
+        "256": "256.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.kinopoisk.ru/film/*"],
+            "js": ["content_script.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
